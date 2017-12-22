@@ -36,7 +36,7 @@ services:
     network_mode: bridge
 
   nginx:
-    image: dockerwest/nginx-symfony:${NGINXVERSION:-stable}
+      image: dockerwest/nginx-symfony-${SYMFONYVERSION:-3}:${NGINXVERSION:-stable}
     environment:
       - VIRTUAL_HOST=${BASEHOST:-application.dev},www.${BASEHOST:-application.dev},${EXTRAHOSTS}
       - VIRTUAL_PORT=80
