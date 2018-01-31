@@ -32,7 +32,7 @@ services:
       - mailcatcher
 
   nginx:
-    image: dockerwest/nginx-symfony-${SYMFONYVERSION:-3}:${NGINXVERSION:-stable}
+    image: dockerwest/nginx-symfony:${SYMFONYVERSION:-3}-${NGINXVERSION:-stable}
     environment:
       - VIRTUAL_HOST=${BASEHOST:-application.dev},www.${BASEHOST:-application.dev},${EXTRAHOSTS}
     volumes:
