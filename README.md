@@ -53,7 +53,7 @@ C_UID=1000
 C_GID=1000
 PHPVERSION=7.1
 NGINXVERSION=stable
-SYMFONYVERSION=3
+SYMFONYVERSION=4
 BASEHOST=application.dev
 MYSQL_ROOT_PASSWORD=toor
 APPLICATION=../application
@@ -79,8 +79,8 @@ Choose what version of Nginx you want. To see which versions are available see
 
 ### SYMFONYVERSION
 
-Choose what version of Symfony you want. To see which versions are available see
-[here](https://github.com/dockerwest/nginx-symfony)
+Choose the version of symfony you are going to use. The nginx configuration is
+slightly different between version 3 and version 4.
 
 ### BASEHOST
 
