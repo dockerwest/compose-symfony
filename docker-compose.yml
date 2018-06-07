@@ -7,7 +7,7 @@ services:
       - DOMAIN_NAME=redis.${BASEHOST:-application.docker}
 
   mysql:
-    image: mysql
+    image: mysql:5.7
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-toor}
       - DOMAIN_NAME=mysql.${BASEHOST:-application.docker}
